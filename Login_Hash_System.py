@@ -54,3 +54,32 @@ def login():
     print("\nInvalid username or password :(")
 
 # _________________________________________________________________________________________________
+
+while True:
+
+    print('''
+====================
+=== Login System ===
+====================
+
+1. Create Account
+2. Login
+3. Exit
+''')
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        CreateAccount()
+
+    elif choice == "2":
+        login()
+
+    elif choice == "3":
+        print("\nGoodbye")
+        break
+
+    else:
+        print("\nInvalid choice")
+        
+# _________________________________________________________________________________________________
